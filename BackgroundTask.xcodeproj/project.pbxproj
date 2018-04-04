@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,15 @@
 		5BC607FC1D7146AC00D5C97A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC607FA1D7146AC00D5C97A /* LaunchScreen.storyboard */; };
 		5BC608071D7146AC00D5C97A /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC608061D7146AC00D5C97A /* testTests.swift */; };
 		5BC608121D7146AC00D5C97A /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC608111D7146AC00D5C97A /* testUITests.swift */; };
+		6570FF712062D23400902704 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6570FF702062D23400902704 /* Gif.swift */; };
+		6570FF732062D49B00902704 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF722062D49B00902704 /* giphy.gif */; };
+		6570FF752068CEA500902704 /* water.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF742068CEA500902704 /* water.gif */; };
+		6570FF772069706C00902704 /* magic-carpet.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF762069706C00902704 /* magic-carpet.gif */; };
+		6570FF79206971BB00902704 /* mermaid.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF78206971BB00902704 /* mermaid.gif */; };
+		6570FF7B2069728000902704 /* triceps.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF7A2069728000902704 /* triceps.gif */; };
+		6570FF7D206972EE00902704 /* push-ups.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF7C206972EE00902704 /* push-ups.gif */; };
+		6570FF7F2069738E00902704 /* wooden-leg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF7E2069738E00902704 /* wooden-leg.gif */; };
+		6570FF812069740D00902704 /* squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6570FF802069740D00902704 /* squat.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,15 @@
 		5BC6080D1D7146AC00D5C97A /* BackgroundTask.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundTask.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC608111D7146AC00D5C97A /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		5BC608131D7146AC00D5C97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6570FF702062D23400902704 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		6570FF722062D49B00902704 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		6570FF742068CEA500902704 /* water.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = water.gif; sourceTree = "<group>"; };
+		6570FF762069706C00902704 /* magic-carpet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "magic-carpet.gif"; sourceTree = "<group>"; };
+		6570FF78206971BB00902704 /* mermaid.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mermaid.gif; sourceTree = "<group>"; };
+		6570FF7A2069728000902704 /* triceps.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = triceps.gif; sourceTree = "<group>"; };
+		6570FF7C206972EE00902704 /* push-ups.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "push-ups.gif"; sourceTree = "<group>"; };
+		6570FF7E2069738E00902704 /* wooden-leg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "wooden-leg.gif"; sourceTree = "<group>"; };
+		6570FF802069740D00902704 /* squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = squat.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				5BC607F11D7146AC00D5C97A /* AppDelegate.swift */,
+				6570FF702062D23400902704 /* Gif.swift */,
+				B31AFB2B2075630900C3878E /* GIFs */,
 				5BC607F31D7146AC00D5C97A /* ViewController.swift */,
 				5B7F21671D72535400D0A65D /* BackgroundTask.swift */,
 				5BC607F51D7146AC00D5C97A /* Main.storyboard */,
@@ -129,6 +149,21 @@
 				5BC608131D7146AC00D5C97A /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		B31AFB2B2075630900C3878E /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				6570FF742068CEA500902704 /* water.gif */,
+				6570FF78206971BB00902704 /* mermaid.gif */,
+				6570FF7A2069728000902704 /* triceps.gif */,
+				6570FF802069740D00902704 /* squat.gif */,
+				6570FF7E2069738E00902704 /* wooden-leg.gif */,
+				6570FF7C206972EE00902704 /* push-ups.gif */,
+				6570FF762069706C00902704 /* magic-carpet.gif */,
+				6570FF722062D49B00902704 /* giphy.gif */,
+			);
+			path = GIFs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +254,7 @@
 				};
 			};
 			buildConfigurationList = 5BC607E91D7146AC00D5C97A /* Build configuration list for PBXProject "BackgroundTask" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -243,10 +278,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6570FF732062D49B00902704 /* giphy.gif in Resources */,
+				6570FF7D206972EE00902704 /* push-ups.gif in Resources */,
 				5B7F21661D71963A00D0A65D /* 3.wav in Resources */,
+				6570FF752068CEA500902704 /* water.gif in Resources */,
+				6570FF7F2069738E00902704 /* wooden-leg.gif in Resources */,
 				5BC607FC1D7146AC00D5C97A /* LaunchScreen.storyboard in Resources */,
 				5BC607F91D7146AC00D5C97A /* Assets.xcassets in Resources */,
+				6570FF812069740D00902704 /* squat.gif in Resources */,
+				6570FF7B2069728000902704 /* triceps.gif in Resources */,
 				5BC607F71D7146AC00D5C97A /* Main.storyboard in Resources */,
+				6570FF79206971BB00902704 /* mermaid.gif in Resources */,
+				6570FF772069706C00902704 /* magic-carpet.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +316,7 @@
 			files = (
 				5B7F21681D72535400D0A65D /* BackgroundTask.swift in Sources */,
 				5BC607F41D7146AC00D5C97A /* ViewController.swift in Sources */,
+				6570FF712062D23400902704 /* Gif.swift in Sources */,
 				5BC607F21D7146AC00D5C97A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +464,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6SHPE7SFN5;
 				INFOPLIST_FILE = test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = run.mytask.forever;
+				PRODUCT_BUNDLE_IDENTIFIER = JITAIWalk2;
 				PRODUCT_NAME = BackgroundTask;
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -437,11 +481,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6SHPE7SFN5;
 				INFOPLIST_FILE = test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = run.mytask.forever;
+				PRODUCT_BUNDLE_IDENTIFIER = JITAIWalk2;
 				PRODUCT_NAME = BackgroundTask;
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
