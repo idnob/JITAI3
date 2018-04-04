@@ -26,9 +26,7 @@ class ViewController: UIViewController {
     var avgStepsLastWeek = 0 //average of steps done last working week (5 days) by the subject
     var distanceFromTarget = 0 //distance from target of 3000 steps during 8h working day
     var stepsThreshold = 0 //dynamic threshold that increases gradually day by day
-    var fromLastWeek = NSDate(timeIntervalSinceNow: -3600*24*7) //starting to count from Monday last week
-    var toLastWeek = NSDate(timeIntervalSinceNow: -3600*64) //finishing the count Friday last week
-    var stepsWeek = [0,0,0,0,0]
+    var stepsWeek = NSMutableArray();
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var starTaskButton: UIButton!
@@ -78,25 +76,33 @@ class ViewController: UIViewController {
         stopTaskButton.isUserInteractionEnabled = true
         
         //***************** Check how much a user has walked last wekk and set the threshold *******************
-//        var fromLastWeek = NSDate(timeIntervalSinceNow: -3600*24*7) //Monday at 8
-//        toLastWeek = NSDate(timeIntervalSinceNow: -3600*160) //Monday at 16
-//        if(CMPedometer.isStepCountingAvailable()){
-//            pedometer.queryPedometerData(from: fromLastWeek as Date, to: toLastWeek as Date) { (data : CMPedometerData!, error) -> Void in
-//                self.stepsWeek[0] = Int(data!.numberOfSteps)
-//                print(self.stepsWeek[0])
-//                print(self.fromLastWeek,self.toLastWeek)
-//            }
-//        }
-//        print("culo")
-//        fromLastWeek = NSDate(timeIntervalSinceNow: -3600*24*6) //Tuesday at 8
-//        toLastWeek = NSDate(timeIntervalSinceNow: -3600*136) //Tuesday at 16
-//        if(CMPedometer.isStepCountingAvailable()){
-//            pedometer.queryPedometerData(from: fromLastWeek as Date, to: toLastWeek as Date) { (data : CMPedometerData!, error) -> Void in
-//                self.stepsWeek[1] = Int(data!.numberOfSteps)
-//                print(self.stepsWeek[0])
-//                print(self.fromLastWeek,self.toLastWeek)
-//            }
-//        }
+
+        if(CMPedometer.isStepCountingAvailable()){
+            let calendar = NSCalendar.current;
+            var aDate = Date();
+            for _ in 0...6 {
+                aDate = calendar.nextDate(after: aDate,
+                                          matching: DateComponents(hour: 8, minute: 0, second: 0),
+                                          matchingPolicy: Calendar.MatchingPolicy.previousTimePreservingSmallerComponents,
+                                          repeatedTimePolicy: Calendar.RepeatedTimePolicy.first,
+                                          direction: Calendar.SearchDirection.backward
+                    )!
+                
+                let toDate = Date(timeInterval: 3600 * 8, since: aDate);
+                pedometer.queryPedometerData(from: aDate, to: toDate) { (data : CMPedometerData!, error) -> Void in
+                    self.stepsWeek.add(data!.numberOfSteps)
+                    if (self.stepsWeek.count == 7) {
+                        var media = 0;
+                        for numero in self.stepsWeek as! [NSNumber] {
+                            media += Int(numero);
+                        }
+                        media = media / self.stepsWeek.count;
+                        self.stepsWeek = NSMutableArray();
+                        print("media: ",  media)
+                    }
+                }
+            }
+        }
         
     }
     
