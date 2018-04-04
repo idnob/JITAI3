@@ -121,15 +121,8 @@
 			children = (
 				5BC607F11D7146AC00D5C97A /* AppDelegate.swift */,
 				6570FF702062D23400902704 /* Gif.swift */,
-				6570FF742068CEA500902704 /* water.gif */,
-				6570FF78206971BB00902704 /* mermaid.gif */,
-				6570FF7A2069728000902704 /* triceps.gif */,
-				6570FF802069740D00902704 /* squat.gif */,
-				6570FF7E2069738E00902704 /* wooden-leg.gif */,
-				6570FF7C206972EE00902704 /* push-ups.gif */,
-				6570FF762069706C00902704 /* magic-carpet.gif */,
+				B31AFB2B2075630900C3878E /* GIFs */,
 				5BC607F31D7146AC00D5C97A /* ViewController.swift */,
-				6570FF722062D49B00902704 /* giphy.gif */,
 				5B7F21671D72535400D0A65D /* BackgroundTask.swift */,
 				5BC607F51D7146AC00D5C97A /* Main.storyboard */,
 				5BC607F81D7146AC00D5C97A /* Assets.xcassets */,
@@ -156,6 +149,21 @@
 				5BC608131D7146AC00D5C97A /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		B31AFB2B2075630900C3878E /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				6570FF742068CEA500902704 /* water.gif */,
+				6570FF78206971BB00902704 /* mermaid.gif */,
+				6570FF7A2069728000902704 /* triceps.gif */,
+				6570FF802069740D00902704 /* squat.gif */,
+				6570FF7E2069738E00902704 /* wooden-leg.gif */,
+				6570FF7C206972EE00902704 /* push-ups.gif */,
+				6570FF762069706C00902704 /* magic-carpet.gif */,
+				6570FF722062D49B00902704 /* giphy.gif */,
+			);
+			path = GIFs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
